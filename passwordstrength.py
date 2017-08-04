@@ -5,6 +5,11 @@ import hashlib
 import google
 import sys
 
+#TODO
+#General Clean up/ do some better practices...when I learn them
+#Add Hob0's rules https://github.com/praetorian-inc/Hob0Rules/blob/master/hob064.rule
+#Find way to secure google searches to prevent 
+
 perpass = ''
 partialMatch = []
 likeperpass = []
@@ -88,7 +93,7 @@ def googleHashSearch(password):
 			print("Top result its: %s" % url)
 		sys.stdout.write("\rSearching the internet for Hash. Results: %i" % results)
 	if results == 0:
-		print("No Hash results online found.")
+		print("No Hash results online found. (Thats a good thing)")
 
 
 if __name__ == '__main__':
